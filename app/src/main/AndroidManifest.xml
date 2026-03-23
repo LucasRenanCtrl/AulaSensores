@@ -2,7 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
     <uses-permission android:name="android.permission.SENSOR"/>
-    <uses-permission android:name="android.permission.HIGH_SAMPLING_RATE_SENSORS" />
+
+    <!-- Esse app só vai aparecer na play store se o celular possuir o sensor necessário -->
+    <uses-feature
+        android:name="android.hardware.sensor.proximity"
+        android:required="true" />
 
 
     <application

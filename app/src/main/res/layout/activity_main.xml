@@ -1,20 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#222222"
-    tools:context=".MainActivity">
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="#FFFFFF">
 
     <TextView
-        android:id="@+id/tv_square"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:layout_centerInParent="true"
-        android:background="#EF5350"
-        android:gravity="center"
-        android:text="Hello World!"
-        android:textColor="@color/white"
-        android:textSize="20sp"/>
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reação à Proximidade"
+        android:textColor="#2196F3"
+        android:textSize="28sp"
+        android:textStyle="bold" />
 
-</RelativeLayout>
+    <TextView
+        android:id="@+id/tvInstruction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pressione INICIAR"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="40dp" />
+
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status atual: Distante"
+        android:textSize="24sp"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:id="@+id/tvScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pontos: 0"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tempo: 30s"
+        android:textSize="26sp"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="INICIAR JOGO"
+        android:textSize="20sp"
+        android:layout_marginTop="40dp" />
+
+</LinearLayout>
